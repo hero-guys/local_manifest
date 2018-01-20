@@ -9,13 +9,25 @@
   <project name="hero-guys/android_vendor_samsung_hero-common" path="vendor/samsung/hero-common" remote="github" revision="lineage-15.1" />
 
   <!--Device Repos-->
-  <project name="ivanmeler/android_device_samsung_hero2lte" path="device/samsung/hero2lte" remote="github" revision="lineage-15.1" />
-  <project name="ivanmeler/android_device_samsung_herolte" path="device/samsung/herolte" remote="github" revision="lineage-15.1" />
+  <project name="dylanneve1/android_device_samsung_hero2lte" path="device/samsung/hero2lte" remote="github" revision="lineage-15.0" />
+  <project name="dylanneve1/android_device_samsung_herolte" path="device/samsung/herolte" remote="github" revision="lineage-15.0" />
   <project name="hero-guys/android_device_samsung_hero-common" path="device/samsung/hero-common" remote="github" revision="lineage-15.1" />
   <project name="ivanmeler/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-15.1" />
-  <project name="ivanmeler/android_hardware_samsung_slsi-cm_openmax" path="hardware/samsung_slsi-cm/openmax" remote="github" revision="nx-8.1" />
+  <project name="ivanmeler/android_hardware_samsung_slsi-cm_openmax" path="hardware/samsung_slsi-cm/openmax" remote="github" revision="lineage-15.1" />
   <project name="ivanmeler/android_hardware_samsung_slsi-cm_exynos8890" path="hardware/samsung_slsi-cm/exynos8890" remote="github" revision="lineage-15.1" />
   <project name="hero-guys/android_hardware_samsung_slsi-cm_exynos" path="hardware/samsung_slsi-cm/exynos" remote="github" revision="lineage-15.1" />
   <project name="ivanmeler/android_kernel_samsung_universal8890" path="kernel/samsung/universal8890" remote="github" revision="lineage-15.1" />
+
+ <!-- Toolchain -->
+ <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-cortex_a53-linux-gnueabi" name="djb77/aarch64-cortex_a53-linux-gnueabi" remote="github" revision="gcc-6"/>
+
+ <!-- Time for some of da sstuff -->
+ <remove-project name="LineageOS/android_frameworks_base" />
+ <remove-project name="LineageOS/android_frameworks_av" />
+ <remove-project name="LineageOS/android_vendor_lineage" />
+
+ <project name="hero-guys/android_frameworks_base" path="frameworks/base" rmeote="github" revision="staging/lineage-15.1" />
+ <project name="TeamNexus/android_frameworks_av" path="frameworks/av" rmeote="github" revision="nx-8.1" />
+ <project name="hero-guys/android_vendor_lineage" path="vendor/lineage" rmeote="github" revision="lineage-15.1" />
 
 </manifest>
